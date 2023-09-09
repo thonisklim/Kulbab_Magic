@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "my-nice-mod",
+	"version": "${version}",
+	"name": "My Nice Mod",
+	"description": "This is Kulbab`s mod!",
+	"authors": [
+		"Kulbab"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/my-nice-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.kulbab.mynicemod.MyNiceMod"
+		],
+		"client": [
+			"net.kulbab.mynicemod.MyNiceModClient"
+		],
+		"fabric-datagen": [
+			"net.kulbab.mynicemod.MyNiceModDataGenerator"
+		]
+	},
+	"mixins": [
+		"my-nice-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

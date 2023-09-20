@@ -1,0 +1,12 @@
+{
+  "item.mynicemod.ruby": "Ruby",
+  "item.mynicemod.magic_ruby": "Filled Ruby",
+
+  "block.mynicemod.ruby_ore": "Ruby Ore",
+  "block.mynicemod.ruby_block": "Block of Ruby",
+
+  "itemgroup.ruby": "Kulbab's Magic Mod",
+
+  "enchantment.mynicemod.hit_and_run": "Hit and Run",
+  "enchantment.mynicemod.lightning_strike": "Lightning Strike"
+}

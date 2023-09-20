@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mynicemod:block/ruby_block"
+    }
+  }
+}

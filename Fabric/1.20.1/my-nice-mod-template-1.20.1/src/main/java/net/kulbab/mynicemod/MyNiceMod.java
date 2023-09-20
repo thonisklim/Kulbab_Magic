@@ -2,19 +2,23 @@ package net.kulbab.mynicemod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.kulbab.mynicemod.block.ModBlocks;
+import net.kulbab.mynicemod.enchantment.ModEnchantments;
+import net.kulbab.mynicemod.item.ModItemGroup;
+import net.kulbab.mynicemod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class MyNiceMod implements ModInitializer {
-	public static final String MOD_ID = "my-nice-mod";
+	public static final String MOD_ID = "mynicemod";
     public static final Logger LOGGER = LoggerFactory.getLogger("MOD_ID");
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+		ModBlocks.registerModBlocks();
+		ModItemGroup.registerItemGroup();
+		ModItems.registerModItems();
 
-		LOGGER.info("Hello Fabric world!");
+		ModEnchantments.registerModEnchantments();
 	}
 }
